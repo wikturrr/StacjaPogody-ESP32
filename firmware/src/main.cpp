@@ -5,6 +5,7 @@
 #include <Adafruit_SSD1306.h>
 #include <DHT.h>
 #include <Wire.h>
+#include "secrets.h"
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -15,8 +16,8 @@ DHT dht(DHTPIN, DHTTYPE);
 
 Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT, &Wire, 1);
 
-const char *ssid = "SECRET_SSID";
-const char *password = "SECRET_PASS";
+const char *ssid = SECRET_SSID;
+const char *password = SECRET_PASS;
 
 WiFiClient espClient;
 PubSubClient client(espClient);

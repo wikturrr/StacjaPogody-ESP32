@@ -1,0 +1,25 @@
+# --- TAJNE DANE ---
+.env
+**/secrets.h
+
+# --- PYTHON ---
+__pycache__/
+*.pyc
+.venv/
+env/
+dist/
+build/
+
+# --- PLATFORMIO / ESP32 ---
+.pio/
+.vscode/
+*.bak
+*.orig
+
+# --- DOCKER ---
+# mosquitto/data/
+# mosquitto/log/
+
+# --- SYSTEMOWE ---
+.DS_Store
+Thumbs.db
